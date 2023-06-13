@@ -18,9 +18,13 @@
     <script src="https://unpkg.com/vue@3"></script>
 
     <div id="app">
+
+        <h1 class="text-center">
+            Mail generated
+        </h1>
         <ul>
-            <li>
-                {{mail}}
+            <li v-if="mail" v-for="element in mail">
+                {{element}}
             </li>
         </ul>
 
